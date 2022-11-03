@@ -1,0 +1,203 @@
+/* Paleta de colores
+#F20544
+#F2CB05
+#F2B705
+#F28705
+#F20505*/
+
+
+/*MODELO DE CAJA*/
+html{
+    box-sizing: border-box;   /*aprender de memoria, afecta todo el documento html*/
+}
+*,*::after,*::before{        /*Los asteriscos se refieren a aplicarlo en TODO*/
+    box-sizing: inherit;   /*Memorizar*/
+}
+
+/*****TEXTO VISUALIZADO EN NAVEGADOR ES EL BODY******************************/
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+/*contenedores genericos*/
+.contenedor{
+    width: 80%;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 1280px;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 1em;
+    margin:0 0.1em;  /*Arriba, derecha, abajo, izquierda*/
+    font-size: 1.2rem;
+    border-radius: 0.3em;
+
+}
+
+.bg-img-fondo{
+    background-image: url('../assets/img/fondo.jpg');   /*SIEMPRE AGREGAR ../   PARA QUE RECONOZCA LA RUTA*/
+    height: 18.75rem;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-transp{
+    background-color: #f2054444;
+    padding: 1.5em 0 1.5em 0;
+}
+
+.nav-logo-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-logo a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+
+}
+
+.nav-logo img{
+    width: 2em;
+}
+
+.nav-menu{
+    background-color: #F2B705;
+    padding: 1rem;
+    border-radius: 0.3em;
+}
+
+.nav-link{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    padding: 0.3em;
+}
+
+.nav-link::hover{
+    background-color: white;
+    color: black;
+    border-radius: 0.3em;
+}
+
+
+/*********PRINCIPAL*********/
+
+.principal{
+    background-color: white;
+    margin-top: -2.5em;
+    padding: 0.3em;
+    border-radius: 0.3em;
+
+}
+
+.titulo-principal{
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+/***PROPIEDADES DE TARJETA***/
+
+.card{
+    
+    background-color: aqua;
+    overflow: hidden;
+    border-radius: 0.5em;
+    margin-bottom: 1em;
+}
+
+.img-card{
+    width: 100%;
+
+}
+
+.body-card{
+    padding: 1em;
+}
+
+.body-card h1{
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 1em 0;
+}
+
+
+.body-card p{
+    font-weight: 200;
+}
+
+.btn-card{
+    background-color: #F2B705;
+    color: white;
+}
+
+/*******/
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color:#F20544 ;
+
+}
+
+.img-col-contacto{
+    background-image: url(../assets/img/grande.jpg);
+    height: 21.8em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    order: 2;
+
+}
+
+.txt-col-contacto{
+    order: 1;
+}
+
+.body-contacto{
+    padding: 1em;
+    color: white;
+    text-align: center;
+}
+
+.body-contacto h3{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.body-contacto p{
+    font-weight: 200;
+}
+
+.body-contacto a{
+    font-weight: 500;
+}
+
+
+/*******PIE DE PAGINA******/
+
+.bg-footer{
+    background-color:black ;
+    color: white;
+}
+
+.bg-footer p{
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+}
